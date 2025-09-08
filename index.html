@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Clean - Soluciones de Limpieza Industrial</title>
+
+    <!-- Favicon Emoji (🧪) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+
+    <!-- Google Fonts: Exo 2 (Bold 700 Italic) & Roboto (Regular 400) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.2 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome 6.4.2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --color-primary: #497027; /* Verde Principal */
+            --color-accent: #FFE000; /* Amarillo de Acento */
+            --color-dark: #286040; /* Verde Oscuro */
+            --color-bright: #3FAD29; /* Verde Brillante */
+            --color-light: #A2D683; /* Verde Claro */
+            --color-text: #333333;
+            --color-white: #FFFFFF;
+            --font-headings: 'Exo 2', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            font-style: italic;
+            color: var(--color-primary);
+        }
+
+        /* Header */
+        .top-bar {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            font-size: 0.9rem;
+        }
+        .top-bar a {
+            color: var(--color-white);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .top-bar a:hover {
+            opacity: 0.8;
+        }
+
+        /* Navbar */
+        .navbar-brand {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            font-style: italic;
+            color: var(--color-primary) !important;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .navbar .nav-link {
+            font-family: var(--font-body);
+            font-weight: 500;
+        }
+
+        /* Buttons */
+        .btn-accent {
+            background-color: var(--color-accent);
+            color: var(--color-text);
+            font-weight: bold;
+            border: 2px solid var(--color-accent);
+        }
+        .btn-accent:hover {
+            background-color: #e6c800;
+            color: var(--color-text);
+            border-color: #e6c800;
+        }
+
+        .btn-primary-custom {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border-color: var(--color-primary);
+        }
+        .btn-primary-custom:hover {
+            background-color: #3a5a1f;
+            color: var(--color-white);
+            border-color: #3a5a1f;
+        }
+        
+        .btn-outline-primary-custom {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+        .btn-outline-primary-custom:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border-color: var(--color-primary);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--color-white);
+            border-color: #25D366;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+            color: var(--color-white);
+            border-color: #1da851;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, var(--color-dark), var(--color-primary), var(--color-bright));
+            color: var(--color-white);
+            padding: 100px 0;
+        }
+        #hero h1 {
+            color: var(--color-white);
+            font-size: 3.5rem;
+        }
+        #hero .key-point i {
+            color: var(--color-accent);
+        }
+        #hero .key-point h3 {
+            color: var(--color-white);
+            margin-top: 1rem;
+        }
+
+        /* Sections */
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        /* Carousel */
+        #carousel-section .carousel-item img {
+            max-height: 70vh;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+        }
+        footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar py-2 d-none d-md-block">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex gap-3">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="d-flex gap-4">
+                    <span><i class="fas fa-phone me-2"></i>+52 55 1234 5678</span>
+                    <span><i class="fas fa-envelope me-2"></i>contacto@chemicalclean.mx</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHEMICAL CLEAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carousel-section">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-accent px-4" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center">
+        <div class="container">
+            <h1 class="display-3 mb-3">SOLUCIONES DE LIMPIEZA QUÍMICA AVANZADA</h1>
+            <p class="lead mb-5">Eficiencia, seguridad y sostenibilidad para la industria moderna.</p>
+            <div class="row">
+                <!-- Key Point 1 -->
+                <div class="col-md-4 mb-4 key-point">
+                    <i class="fas fa-flask-vial fa-3x"></i>
+                    <h3 class="h4 mt-3">Fórmulas Innovadoras</h3>
+                    <p>Desarrollamos productos de alto rendimiento con la última tecnología química.</p>
+                </div>
+                <!-- Key Point 2 -->
+                <div class="col-md-4 mb-4 key-point">
+                    <i class="fas fa-leaf fa-3x"></i>
+                    <h3 class="h4 mt-3">Compromiso Ambiental</h3>
+                    <p>Soluciones biodegradables y procesos seguros para un futuro más verde.</p>
+                </div>
+                <!-- Key Point 3 -->
+                <div class="col-md-4 mb-4 key-point">
+                    <i class="fas fa-industry fa-3x"></i>
+                    <h3 class="h4 mt-3">Aplicaciones Industriales</h3>
+                    <p>Especializados en satisfacer las necesidades de limpieza de cualquier sector productivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="section-padding text-center">
+        <div class="container">
+            <h2 class="mb-3">CONTACTA CON UN EXPERTO</h2>
+            <p class="lead mb-4">¿Necesitas una solución a tu medida? Hablemos de tu proyecto.</p>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a href="https://wa.me/525512345678" target="_blank" class="btn btn-whatsapp btn-lg px-4 gap-3"><i class="fab fa-whatsapp me-2"></i>Contactar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel-section">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner_01.jpg" class="d-block w-100" alt="Laboratorio químico moderno y limpio">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner_02.jpg" class="d-block w-100" alt="Proceso de limpieza industrial en una fábrica">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner_03.jpg" class="d-block w-100" alt="Conjunto de productos de limpieza con la etiqueta Chemical Clean">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner_04.jpg" class="d-block w-100" alt="Técnico con equipo de protección aplicando un producto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner_05.jpg" class="d-block w-100" alt="Técnico con equipo de protección aplicando un producto">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros Section -->
+    <section id="sobre-nosotros" class="section-padding text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="fas fa-check-circle fa-4x mb-4" style="color: #3FAD29;"></i>
+                    <h2 class="mb-4">QUIÉNES SOMOS</h2>
+                    <p class="lead">En Chemical Clean, combinamos ciencia e innovación para crear soluciones de limpieza industrial que superan los más altos estándares. Nuestra misión es optimizar los procesos de nuestros clientes, garantizando la máxima eficacia y el respeto por el medio ambiente en cada fórmula.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="section-padding bg-light text-center">
+        <div class="container">
+            <h2 class="mb-3">NUESTROS SERVICIOS Y PRODUCTOS</h2>
+            <p class="lead mb-4">Descubre un catálogo diseñado para resolver cualquier desafío de limpieza industrial.</p>
+            <a href="#" class="btn btn-lg btn-outline-primary-custom px-5">Ver Catálogo Completo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Chemical Clean. Todos los derechos reservados.</p>
+            <p class="mb-0 small">Diseño web por <a href="www.automatowebs.fun">Automato Webs 🍅</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.2 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS (if needed in the future) -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href').length > 1) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
